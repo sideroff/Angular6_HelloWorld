@@ -1,15 +1,17 @@
-<h1>User {{ user$.name }}</h1>
+<div *ngIf="user$">
+  <h1>User {{ user$.name }}</h1>
 
-<ul>
-  <li>
-    <strong>Username:</strong> {{ user$.username }}
-  </li>
+  <ul>
+    <li>
+      <strong>Username:</strong> {{ user$.username }}
+    </li>
 
-  <li>
-    <strong>Email:</strong> {{ user$.email }}
-  </li>
+    <li>
+      <strong>Email:</strong> {{ user$.email }}
+    </li>
 
-  <li>
-    <strong>Phone:</strong> {{ user$.phone }}
-  </li>
-</ul>
+    <li>
+      <strong>Phone:</strong> {{ user$.phone }}
+    </li>
+  </ul>
+</div>
