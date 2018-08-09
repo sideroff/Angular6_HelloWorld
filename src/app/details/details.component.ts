@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { Observable } from 'rxjs';
-import { ActivatedRoute } from '@angular/router'
+import { ActivatedRoute } from '@angular/router';
 
 
 @Component({
@@ -18,9 +18,7 @@ export class DetailsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.data.getUser(this.user$).subscribe(
-      data => this.user$ = data
-    )
+    this.data.getUser(this.user$).subscribe(data => this.user$ = data)
   }
 
 }
